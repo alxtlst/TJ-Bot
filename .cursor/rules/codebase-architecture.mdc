@@ -1,0 +1,13 @@
+---
+description: Consult docs/CODEBASE_MAP.md for repository structure, modules, entry points, and high-level architecture before reasoning or changing code.
+alwaysApply: true
+---
+
+# Codebase architecture
+
+When the task or question involves **project architecture**, **repository layout**, **Gradle modules**, **how components fit together**, **main entry points**, **feature organization**, **database/schema placement**, or **dependency direction** between packages:
+
+1. **Read** [`docs/CODEBASE_MAP.md`](docs/CODEBASE_MAP.md) first (use the Read tool) and treat it as the orientation layer.
+2. If the map does not cover the detail (edge cases, recent refactors, or a specific class), **follow paths cited there** and read those files or search the tree—do not guess layout or wiring.
+
+Skip reading the map for purely local edits (rename variable, fix typo, single-file bug) with no structural or cross-module impact.
